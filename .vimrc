@@ -30,6 +30,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'morhetz/gruvbox'
 Plugin 'qpkorr/vim-bufkill'
 Plugin 'tibabit/vim-templates'
+Plugin 'ycm-core/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -45,6 +46,7 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+set completeopt-=preview
 let g:user42 = 'adylewsk'
 let g:mail42 = 'adylewsk@student.42.fr'
 let g:tmpl_search_paths = ['~/.vim/templates']
@@ -64,6 +66,3 @@ map <C-Down> <C-W>j
 map <C-Up> <C-W>k
 map <C-Right> <C-W>l
 hi Normal guibg=NONE ctermbg=NONE
-:vs
-:vs
-:cope
